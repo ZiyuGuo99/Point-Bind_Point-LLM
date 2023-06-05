@@ -1,4 +1,4 @@
-CKPT=./best_ckpt/pointbind_pointbert.pt
+CKPT=./ckpts/pointbind_pointbert.pt
 MODEL=PointBind_PointBERT
 
 OUTPUT_DIR=./outputs/test_pointbind_8kpts
