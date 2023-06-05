@@ -5,5 +5,5 @@ This project presents **Point-Bind**, a 3D multi-modality model that aligns **3D
 ## Overview
 Our Point-Bind 
 
-<p align="center">                                                                                                                                          <img src="point-bind.png"/ width="60%"> <br>
+<p align="center">                                                                                                                                          <img src="point-bind.png"/ width="70%"> <br>
 </p>
