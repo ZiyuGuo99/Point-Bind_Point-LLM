@@ -1,4 +1,4 @@
-CKPT=./best_ckpt/pointbind_i2pmae.pt
+CKPT=./ckpts/pointbind_i2pmae.pt
 MODEL=PointBind_I2PMAE
 
 OUTPUT_DIR=./outputs/test_pointbind_8kpts
