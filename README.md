@@ -29,7 +29,7 @@ Please refer to [Install.md](https://github.com/ZrrSkywalker/Point-Bind/blob/mai
 ### 3D Zero-shot Tasks
 
 Zero-shot classification accuracy comparison on ModelNet40 dataset:
-|  Model | Encoder | Acc. (%)|
+|  Model | Encoder | ModeNet40 (%)|
 | :-----: | :-----: |:-----:|
 |  [PointCLIP](https://github.com/ZrrSkywalker/PointCLIP) | 2D CLIP |20.2|
 |  [ULIP](https://github.com/salesforce/ULIP) | Point-BERT |60.4|
