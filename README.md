@@ -24,6 +24,37 @@ Please refer to [Install.md](https://github.com/ZrrSkywalker/Point-Bind/blob/mai
 
 ### 3D with Multi-modalities
 
+We provide simple inference scripts to verify the embedding alignment for 3D and other modalities in Point-Bind.
+
+#### Compare 3D with Text
+Run `python demo_text_3d.py` with input:
+```
+text_list = ['An airplane', 'A car', 'A toilet']
+point_paths = ["examples/airplane.pt", "examples/car.pt", "examples/toilet.pt"]
+```
+Output the similarity matrix:
+```
+Text x Point Cloud
+tensor([[1.0000e+00, 6.5731e-09, 6.5958e-10],
+        [1.7373e-06, 9.9998e-01, 1.7816e-05],
+        [2.1133e-10, 3.4070e-08, 1.0000e+00]])
+```
+
+#### Compare 3D with Audio
+Run `python demo_audio_3d.py` with input:
+Input
+```
+audio_paths = ["examples/airplane_audio.wav", "examples/car_audio.wav", "examples/toilet_audio.wav"]
+point_paths = ["examples/airplane.pt", "examples/car.pt", "examples/toilet.pt"]
+```
+Output the similarity matrix:
+```
+Audio x Point Cloud: 
+tensor([[0.9907, 0.0041, 0.0051],
+        [0.0269, 0.9477, 0.0254],
+        [0.0057, 0.0170, 0.9773]])
+```
+
 ### 3D LLM via LLaMA-Adapter
 
 ### 3D Zero-shot Tasks
@@ -40,7 +71,7 @@ Zero-shot classification accuracy comparison on ModelNet40 dataset:
 
 
 ## Contributors
-Renrui Zhang, Ziyu Guo, Xiangyang Zhu, Peng Gao
+Ziyu Guo, Renrui Zhang, Xiangyang Zhu, Peng Gao
 
 ## Contact
 If you have any question about this project, please feel free to contact zhangrenrui@pjlab.org.cn and zyguo@cse.cuhk.edu.hk.
