@@ -58,6 +58,9 @@ tensor([[0.9907, 0.0041, 0.0051],
 ### 3D LLM via LLaMA-Adapter
 Please refer to [ImageBind-LLM](https://github.com/ZrrSkywalker/LLaMA-Adapter/tree/main/imagebind_LLM) for Multi-modality LLaMA-Adapter, which performs strong instruction-following capabilities for image, audio, and 3D point cloud conditions. The examples are shown as follows:
 
+<p align="center">                                                                                                                                          <img src="imagebind-llm.png"/ width="90%"> <br>
+</p>
+
 ### 3D Zero-shot Tasks
 For 3D zero-shot classification, please follow [DATASET.md](https://github.com/lulutang0608/Point-BERT/blob/master/DATASET.md) to download ModelNet40, and put it under `/data`. Then run `bash scripts/pointbind_i2pmae.sh` or `bash scripts/pointbind_pointbert.sh` for Point-Bind with I2P-MAE or Point-BERT encoder.
 
