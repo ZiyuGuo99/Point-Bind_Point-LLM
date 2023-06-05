@@ -13,7 +13,7 @@ def get_pc_features(model, pc):     # For 3D feature encoding
 
 # Instantiate model.
 model = models.PointBind_I2PMAE()
-state_dict = torch.load("./best_ckpt/pointbind_i2pmae.pt", map_location='cpu')
+state_dict = torch.load("./ckpts/pointbind_i2pmae.pt", map_location='cpu')
 model.load_state_dict(state_dict, strict=True)
 model.eval().to(device)
 
