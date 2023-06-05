@@ -1,6 +1,6 @@
 # Point-Bind: Align 3D Point Clouds with Multi-modalities
 
-This project presents **Point-Bind** 🔥, a 3D multi-modality model that aligns **3D point clouds** with image, language, audio, and videos guided by [ImageBind](https://github.com/facebookresearch/ImageBind). The 3D encoder of Point-Bind is based on [I2P-MAE]().
+This project presents **Point-Bind** 🔥, a 3D multi-modality model that aligns **3D point clouds** with image, language, audio, and videos guided by [ImageBind](https://github.com/facebookresearch/ImageBind). The 3D encoder of Point-Bind is based on [I2P-MAE](https://github.com/ZrrSkywalker/I2P-MAE).
 
 ## Overview
 
@@ -15,7 +15,7 @@ Our Point-Bind exhibits four main characters:
 - $\color{darkorange}{Embedding\ Arithmetic\ with\ 3D\ .}$ We observe that 3D features from Point-Bind can be added with other modalities to compose their semantics.
 
 ## News
-* 3D LLM via Multi-modal LLaMA-Adapter has been released, please referring to [ImageBind-LLM](https://github.com/ZrrSkywalker/LLaMA-Adapter/tree/main/imagebind_LLM) 📌.
+* The 3D instruction-following LLM via Multi-modal LLaMA-Adapter has been released, please referring to [ImageBind-LLM](https://github.com/ZrrSkywalker/LLaMA-Adapter/tree/main/imagebind_LLM) 📌.
 * The 3D zero-shot classification code of Point-Bind has been released 📌.
 
 
@@ -27,6 +27,17 @@ Please refer to [Install.md](https://github.com/ZrrSkywalker/Point-Bind/blob/mai
 ### 3D LLM via LLaMA-Adapter
 
 ### 3D Zero-shot Tasks
+
+Zero-shot classification accuracy comparison on ModelNet40 dataset:
+|  Model | Encoder | Acc. (%)|
+| :-----: | :-----: |:-----:|
+|  [PointCLIP](https://github.com/ZrrSkywalker/PointCLIP) | 2D CLIP |20.2|
+|  [ULIP](https://github.com/salesforce/ULIP) | Point-BERT |60.4|
+|  [PointCLIP V2](https://github.com/yangyangyang127/PointCLIP_V2) | 2D CLIP |64.2|
+|  [ULIP 2](https://github.com/salesforce/ULIP) | Point-BERT |66.4|
+|  Point-Bind | [Point-BERT](https://github.com/lulutang0608/Point-BERT) |76.3|
+|  Point-Bind | [I2P-MAE](https://github.com/ZrrSkywalker/I2P-MAE) |**80.0**|
+
 
 ## Contributors
 Renrui Zhang, Ziyu Guo, Xiangyang Zhu, Peng Gao
