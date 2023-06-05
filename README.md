@@ -58,7 +58,7 @@ tensor([[0.9907, 0.0041, 0.0051],
 ### 3D LLM via LLaMA-Adapter
 Please refer to [ImageBind-LLM](https://github.com/ZrrSkywalker/LLaMA-Adapter/tree/main/imagebind_LLM) for Multi-modality LLaMA-Adapter, which performs strong instruction-following capabilities for image, audio, and 3D point cloud conditions. The examples are shown as follows:
 
-<p align="center">                                                                                                                                          <img src="imagebind-llm.png"/ width="90%"> <br>
+<p align="center">                                                                                                                                          <img src="imagebind-llm.png"/ width="100%"> <br>
 </p>
 
 ### 3D Zero-shot Tasks
