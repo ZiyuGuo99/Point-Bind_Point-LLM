@@ -20,7 +20,7 @@ pip install "git+https://github.com/erikwijmans/Pointnet2_PyTorch.git#egg=pointn
 # GPU kNN
 pip install --upgrade https://github.com/unlimblue/KNN_CUDA/releases/download/0.2/KNN_CUDA-0.2-py3-none-any.whl
 ```
-Download pre-trained weights of Point-Bind with [I2P-MAE](https://drive.google.com/file/d/1V9y3h9EPlPN_HzU7zeeZ6xBOcvU-Xj6h/view?usp=sharing) or [PointBERT](https://drive.google.com/file/d/1BILH_aAGYuZOxvom8V9-n2fYW7nLGcai/view?usp=sharing) as 3D encoder, and organize the downloaded file in the following structure
+We provide the pre-trained weights of Point-Bind with [I2P-MAE](https://drive.google.com/file/d/1V9y3h9EPlPN_HzU7zeeZ6xBOcvU-Xj6h/view?usp=sharing) and [Point-BERT](https://drive.google.com/file/d/1BILH_aAGYuZOxvom8V9-n2fYW7nLGcai/view?usp=sharing) as the 3D encoders. Normally, Point-Bind with I2P-MAE performs better. Please create a `/ckpts` folder and organize the downloaded files in the following structure
   ```
   Point-Bind/
   ├── ckpts
