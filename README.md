@@ -18,4 +18,18 @@ Our Point-Bind exhibits four main characters:
 * 3D LLM via Multi-modal LLaMA-Adapter has been released, please referring to [ImageBind-LLM](https://github.com/ZrrSkywalker/LLaMA-Adapter/tree/main/imagebind_LLM) 📌.
 * The 3D zero-shot classification code of Point-Bind has been released 📌.
 
-## Preparation
+
+## Getting Started
+Please refer to [Install.md](https://github.com/ZrrSkywalker/Point-Bind/blob/main/Install.md) for preparing environments and pre-trained checkpoints.
+
+### 3D with Multi-modalities
+
+### 3D LLM via LLaMA-Adapter
+
+### 3D Zero-shot Tasks
+
+## Contributors
+Renrui Zhang, Ziyu Guo, Xiangyang Zhu, Peng Gao
+
+## Contact
+If you have any question about this project, please feel free to contact zhangrenrui@pjlab.org.cn and zyguo@cse.cuhk.edu.hk.
