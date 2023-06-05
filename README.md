@@ -13,3 +13,7 @@ Our Point-Bind exhibits four main characters:
 - $\color{darkorange}{3D\ LLM\ via\ LLaMA-Adapter\ .}$ Referring to [Multi-modal LLaMA-Adapter](), we introduce an LLM (LLaMA-Adapter) following 3D instructions ***for the first time***.
 - $\color{darkorange}{3D\ Zero-shot\ Classify/Seg/Det\ .}$ Point-Bind achieves ***state-of-the-art*** performance for 3D zero-shot tasks, including classification, segmentation, and detection.
 - $\color{darkorange}{Embedding\ Arithmetic\ with\ 3D\ .}$ We observe that 3D features from Point-Bind can be added with other modalities to compose their semantics.
+
+## News
+* 3D LLM via Multi-modal LLaMA-Adapter has been released, please referring to [ImageBind-LLM](https://github.com/ZrrSkywalker/LLaMA-Adapter/tree/main/imagebind_LLM) 📌.
+* The 3D zero-shot classification code of Point-Bind has been released 📌.
