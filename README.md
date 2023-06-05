@@ -62,7 +62,7 @@ Please refer to [ImageBind-LLM](https://github.com/ZrrSkywalker/LLaMA-Adapter/tr
 </p>
 
 ### 3D Zero-shot Tasks
-For 3D zero-shot classification, please follow [DATASET.md](https://github.com/lulutang0608/Point-BERT/blob/master/DATASET.md) to download ModelNet40, and put it under `/data`. Then run `bash scripts/pointbind_i2pmae.sh` or `bash scripts/pointbind_pointbert.sh` for Point-Bind with I2P-MAE or Point-BERT encoder.
+For 3D zero-shot classification, please follow [DATASET.md](https://github.com/lulutang0608/Point-BERT/blob/master/DATASET.md) to download ModelNet40, and put it under `/data/modelnet40_normal_resampled/`. Then run `bash scripts/pointbind_i2pmae.sh` or `bash scripts/pointbind_pointbert.sh` for Point-Bind with I2P-MAE or Point-BERT encoder.
 
 Zero-shot classification accuracy comparison:
 |  Model | Encoder | ModeNet40 (%)|
