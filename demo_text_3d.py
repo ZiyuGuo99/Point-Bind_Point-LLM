@@ -1,7 +1,7 @@
 from imagebind.imagebind_model import ModalityType
 from utils.data_transform import load_and_transform_text
 import models.PointBind_models as models
-import torch, json
+import torch
 
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
