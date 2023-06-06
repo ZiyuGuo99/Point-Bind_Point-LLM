@@ -6,7 +6,7 @@ This project presents **Point-Bind** 🔥, a 3D multi-modality model that aligns
 
 Our Point-Bind exhibits four main characters:
 
-<p align="center">                                                                                                                                          <img src="point-bind.png"/ width="70%"> <br>
+<p align="center">                                                                                                                                          <img src="point_bind.png"/ width="70%"> <br>
 </p>
 
 - $\color{darkorange}{Align\ 3D\ with\ ImageBind\ .}$ With a joint embedding space, 3D objects can be aligned with their corresponding 2D images, textual descriptions, and audio.
