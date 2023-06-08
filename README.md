@@ -72,7 +72,7 @@ Zero-shot classification accuracy comparison:
 |  [PointCLIP V2](https://github.com/yangyangyang127/PointCLIP_V2) | 2D CLIP |64.2|
 |  [ULIP 2](https://github.com/salesforce/ULIP) | Point-BERT |66.4|
 |  Point-Bind | [Point-BERT](https://github.com/lulutang0608/Point-BERT) |76.3|
-|  Point-Bind | [I2P-MAE](https://github.com/ZrrSkywalker/I2P-MAE) |**80.0**|
+|  Point-Bind | [I2P-MAE](https://github.com/ZrrSkywalker/I2P-MAE) |**78.0**|
 
 
 ## Contributors
