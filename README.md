@@ -1,26 +1,40 @@
-# Point-Bind: Align 3D Point Clouds with Multi-modalities
+# Point-Bind & Point-LLM: Aligning 3D with Multi-modality
 
-This project presents **Point-Bind** 🔥, a 3D multi-modality model that aligns **3D point clouds** with image, language, audio, and videos guided by [ImageBind](https://github.com/facebookresearch/ImageBind). The 3D encoder of Point-Bind is based on [I2P-MAE](https://github.com/ZrrSkywalker/I2P-MAE).
+Official implementation of ['Point-Bind & Point-LLM: Aligning Point Cloud with Multi-modality for 3D Understanding, Generation, and Instruction Following'](https://github.com/ZiyuGuo99/Point-Bind_Point-LLM/blob/main/Point-Bind%20%26%20Point-LLM.pdf).
 
-## Overview
-
-Our Point-Bind exhibits four main characters:
-
-<p align="center">                                                                                                                                          <img src="point_bind.png"/ width="70%"> <br>
-</p>
-
-- $\color{darkorange}{Align\ 3D\ with\ ImageBind\ .}$ With a joint embedding space, 3D objects can be aligned with their corresponding 2D images, textual descriptions, and audio.
-- $\color{darkorange}{3D\ LLM\ via\ LLaMA-Adapter\ .}$ In [Multi-modal LLaMA-Adapter](https://github.com/ZrrSkywalker/LLaMA-Adapter/tree/main/imagebind_LLM) (ImageBind-LLM), we introduce an LLM following 3D instructions in Engish/中文 ***for the first time***.
-- $\color{darkorange}{3D\ Zero-shot\ Understanding\ .}$ Point-Bind achieves ***state-of-the-art*** performance for 3D zero-shot classification, compared with PointCLIP and ULIP.
-- $\color{darkorange}{Embedding\ Arithmetic\ with\ 3D\ .}$ We observe that 3D features from Point-Bind can be added with other modalities to compose their semantics.
+* **Point-Bind** 🔥 is a 3D multi-modality model with a joint embedding space among 3D point cloud, image, language, audio, and video
+* **Point-LLM** 🔥 is ***the first*** 3D large language model, which ***requires no 3D instruction data*** 🌟 and can ***reason multi-modality input*** 🌟
+* Try our [Online Demo](http://imagebind-llm.opengvlab.com/) 💥 here, which is integrated into [ImageBind-LLM](https://github.com/OpenGVLab/LLaMA-Adapter).
 
 ## News
-* The 3D instruction-following LLM via Multi-modal LLaMA-Adapter has been released, please referring to [ImageBind-LLM](https://github.com/ZrrSkywalker/LLaMA-Adapter/tree/main/imagebind_LLM) 📌.
-* The 3D zero-shot classification code of Point-Bind has been released 📌.
+* **[2023-09-04]** The paper of this project is available on arXiv 🚀.
+* **[2023-05-20]** The inference code of Point-Bind and Point-LLM is released 📌.
 
+## Point-Bind
+
+With a joint embedding space of 3D and multi-modality, our Point-Bind empowers four promising applications:
+
+<p align="center">                                                                                                                                          <img src="Applications.png"/ width="90%"> <br>
+</p>
+
+## Point-LLM
+
+Using Point-Bind, we introduce Point-LLM, ***the first 3D LLM*** that responds to instructions with 3D point cloud conditions, supporting both English and Chinese. Our Point-LLM exhibits two main characters:
+
+- $\color{darkorange}{Data\ and\ Parameter\ Efficiency\ .}$ We only utilize public vision-language data for tuning without any 3D instruction data, and adopt parameter-efficient finetuning techniques, saving extensive resources.
+
+- $\color{darkorange}{3D\ and\ MultiModal\ Reasoning.}$ Via the joint embedding space, Point-LLM can generate descriptive responses by reasoning a combination of 3D and multimodal input, e.g., a point cloud with an image/audio.
+
+<p align="center">                                                                                                                                          <img src="3D Q&A.png"/ width="100%"> <br>
+</p>
+
+The overall pipeline of Point-LLM is as follows. We efficiently fine-tune [LLaMA 7B](https://github.com/facebookresearch/llama) for 3D instruction-following capacity referring to [LLaMA-Adapter](https://arxiv.org/pdf/2303.16199.pdf%20%C3%A2%E2%82%AC%C5%BE%3Emultimodalno%C3%85%E2%80%BA%C3%84%E2%80%A1%3C/a%3E,%C3%82%C2%A0%3Ca%20href=) and [ImageBind-LLM](https://github.com/OpenGVLab/LLaMA-Adapter):
+
+<p align="center">                                                                                                                                          <img src="Pipleline.png"/ width="100%"> <br>
+</p>
 
 ## Getting Started
-Please refer to [Install.md](https://github.com/ZrrSkywalker/Point-Bind/blob/main/Install.md) for preparing environments and pre-trained checkpoints.
+Please refer to [Install.md](https://github.com/ZiyuGuo99/Point-Bind_Point-LLM/blob/main/Install.md) for preparing environments and pre-trained checkpoints.
 
 ### 3D with Multi-modalities
 
@@ -55,12 +69,6 @@ tensor([[0.9907, 0.0041, 0.0051],
         [0.0057, 0.0170, 0.9773]])
 ```
 
-### 3D LLM via LLaMA-Adapter
-Please refer to [ImageBind-LLM](https://github.com/ZrrSkywalker/LLaMA-Adapter/tree/main/imagebind_LLM) for Multi-modal LLaMA-Adapter, which performs strong instruction-following capabilities for image, audio, and 3D point cloud conditions. The examples are shown as follows:
-
-<p align="center">                                                                                                                                          <img src="3D Q&A.png"/ width="100%"> <br>
-</p>
-
 ### 3D Zero-shot Tasks
 For 3D zero-shot classification, please follow [DATASET.md](https://github.com/lulutang0608/Point-BERT/blob/master/DATASET.md) to download ModelNet40, and put it under `data/modelnet40_normal_resampled/`. Then run `bash scripts/pointbind_i2pmae.sh` or `bash scripts/pointbind_pointbert.sh` for Point-Bind with I2P-MAE or Point-BERT encoder.
 
@@ -76,7 +84,7 @@ Zero-shot classification accuracy comparison:
 
 
 ## Contributors
-Ziyu Guo, Renrui Zhang, Xiangyang Zhu, Peng Gao
+Ziyu Guo, Renrui Zhang, Xiangyang Zhu, Yiwen Tang, Peng Gao
 
 ## Contact
-If you have any question about this project, please feel free to contact zhangrenrui@pjlab.org.cn and zyguo@cse.cuhk.edu.hk.
+If you have any questions about this project, please feel free to contact zhangrenrui@pjlab.org.cn and zyguo@cse.cuhk.edu.hk.
