@@ -30,7 +30,7 @@ Using Point-Bind, we introduce Point-LLM, ***the first 3D LLM*** that responds t
 
 The overall pipeline of Point-LLM is as follows. We efficiently fine-tune [LLaMA 7B](https://github.com/facebookresearch/llama) for 3D instruction-following capacity referring to [LLaMA-Adapter](https://arxiv.org/pdf/2303.16199.pdf%20%C3%A2%E2%82%AC%C5%BE%3Emultimodalno%C3%85%E2%80%BA%C3%84%E2%80%A1%3C/a%3E,%C3%82%C2%A0%3Ca%20href=) and [ImageBind-LLM](https://github.com/OpenGVLab/LLaMA-Adapter):
 
-<p align="center">                                                                                                                                          <img src="Pipleline.png"/ width="100%"> <br>
+<p align="center">                                                                                                                                          <img src="Pipeline.png"/ width="100%"> <br>
 </p>
 
 ## Getting Started
