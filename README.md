@@ -6,7 +6,7 @@ This project presents **Point-Bind** 🔥, a 3D multi-modality model that aligns
 
 Our Point-Bind exhibits four main characters:
 
-<p align="center">                                                                                                                                          <img src="point_bind.png"/ width="70%"> <br>
+<p align="center">                                                                                                                                          <img src="Characteristics.png"/ width="70%"> <br>
 </p>
 
 - $\color{darkorange}{Align\ 3D\ with\ ImageBind\ .}$ With a joint embedding space, 3D objects can be aligned with their corresponding 2D images, textual descriptions, and audio.
@@ -58,7 +58,7 @@ tensor([[0.9907, 0.0041, 0.0051],
 ### 3D LLM via LLaMA-Adapter
 Please refer to [ImageBind-LLM](https://github.com/ZrrSkywalker/LLaMA-Adapter/tree/main/imagebind_LLM) for Multi-modal LLaMA-Adapter, which performs strong instruction-following capabilities for image, audio, and 3D point cloud conditions. The examples are shown as follows:
 
-<p align="center">                                                                                                                                          <img src="3D-LLM.png"/ width="100%"> <br>
+<p align="center">                                                                                                                                          <img src="3D Q&A.png"/ width="100%"> <br>
 </p>
 
 ### 3D Zero-shot Tasks
