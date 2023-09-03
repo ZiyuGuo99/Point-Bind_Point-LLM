@@ -3,7 +3,7 @@
 Official implementation of ['Point-Bind & Point-LLM: Aligning Point Cloud with Multi-modality for 3D Understanding, Generation, and Instruction Following'](https://github.com/ZiyuGuo99/Point-Bind_Point-LLM/blob/main/Point-Bind%20%26%20Point-LLM.pdf).
 
 * 🔥 **Point-Bind** is a 3D multi-modality model with a joint embedding space among 3D point cloud, image, language, audio, and video
-* 🔥 **Point-LLM** is ***the first*** 3D large language model, which ***requires no 3D instruction data*** 🌟 and can ***reason 3D multi-modality input*** 🌟
+* 🔥 **Point-LLM** is ***the first*** 3D large language model, which ***requires no 3D instruction data*** 🌟 and ***reasons 3D multi-modality input*** 🌟
 * Try our 💥 [Online Demo](http://imagebind-llm.opengvlab.com/) here, which is integrated into [ImageBind-LLM](https://github.com/OpenGVLab/LLaMA-Adapter)
 
 ## News
