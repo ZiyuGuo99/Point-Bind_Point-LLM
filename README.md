@@ -86,5 +86,10 @@ Zero-shot classification accuracy comparison:
 ## Contributors
 Ziyu Guo, Renrui Zhang, Xiangyang Zhu, Yiwen Tang, Peng Gao
 
+## Related Work
+Other excellent works for incorporating 3D point clouds and LLMs: 
+* [PointLLM](https://github.com/OpenRobotLab/PointLLM): Collect a novel dataset of point-text instruction data to tune LLMs in 3D
+* [3D-LLM](https://github.com/UMass-Foundation-Model/3D-LLM): Render 3D scenes into multi-view images to enable various 3D-related tasks
+
 ## Contact
 If you have any questions about this project, please feel free to contact zhangrenrui@pjlab.org.cn and zyguo@cse.cuhk.edu.hk.
