@@ -82,7 +82,52 @@ Zero-shot classification accuracy comparison:
 |  Point-Bind | [Point-BERT](https://github.com/lulutang0608/Point-BERT) |76.3|
 |  Point-Bind | [I2P-MAE](https://github.com/ZrrSkywalker/I2P-MAE) |**78.0**|
 
+### Inference & Demo for Point-LLM
 
+#### Setup
+* Obtain the LLaMA backbone weights using [this form](https://forms.gle/jk851eBVbX1m5TAv5). Please note that checkpoints from unofficial sources (e.g., BitTorrent) may contain malicious code and should be used with care. Organize the downloaded file in the following structure
+  ```
+  /path/to/llama_model_weights
+  ├── 7B
+  │   ├── checklist.chk
+  │   ├── consolidated.00.pth
+  │   └── params.json
+  └── tokenizer.model
+  ```
+* Other dependent resources will be automatically downloaded at runtime.
+  
+#### Inference
+* Here is a simple script for 3D inference with Point-LLM, utilizing the point cloud samples provided in `examples/`. Also, you can run `python demo.py` under `./Point-LLM`.
+  
+  ```python
+  import ImageBind.data as data
+  import llama
+
+  llama_dir = "/path/to/LLaMA"
+
+  model = llama.load("7B-beta", llama_dir, knn=True)
+  model.eval()
+
+  inputs = {}
+  point = data.load_and_transform_point_cloud_data(["../examples/airplane.pt"], device='cuda')
+  inputs['Point'] = [point, 1]
+  
+  results = model.generate(
+      inputs,
+      [llama.format_prompt("Describe the 3D object in detail:")],
+      max_gen_len=256
+  )
+  result = results[0].strip()
+  print(result)
+  ```
+
+#### Demo
+**Try out our web demo, which incorporates multi-modality including 3D point cloud supported by ImageBind-LLM**
+* Run the following command to host the demo locally:
+  ``` bash
+  python gradio_app.py --llama_dir /path/to/llama_model_weights
+  ```
+ 
 ## Contributors
 Ziyu Guo, Renrui Zhang, Xiangyang Zhu, Yiwen Tang, Peng Gao
 
