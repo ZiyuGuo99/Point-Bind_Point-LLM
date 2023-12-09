@@ -12,3 +12,9 @@ torchaudio
 einops
 ipdb
 ninja
+fairscale
+fire
+sentencepiece
+transformers
+timm
+tensorboard
